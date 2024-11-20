@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Hoja de vida, curriculum Vitae, karol Arevalo, Perfil Profesional">
+    <meta name="Keywords"
+        content="Curriculum, Hoja de vida, cv,Hv,Perfil, Ingeniero de sistemas, Developer, Desarrollador">
+    <meta name="description" content="Portal para conocer la hoja de vida de la ingeniera Karol Arevalo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="author" href="https://www.linkedin.com/in/karol-juliana-arevalo-perez-758b4b310/">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/karol foto.png" type="image/png">
+    <title>Karol-Curriculum</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+/* ########## MENU DE NAVEGACION ######## */
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+
+.enlaces-header {
+    font-weight: 300;
+    margin: auto;
+    transition: all ease-in-out.6s;
+}
+
+.nav .enlaces-header a {
+    color: #5d6678;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.nav .enlaces-header a:hover {
+    color: #fff;
+    background-color: #e9afdf;
+    border-color: #e9afdf;
+    transition: all ease-in-out .6s;
+}
+
+.hamburguer{
+    width: 80px;
+    height: 80px;
+    display: none;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color .5s ease-in;
+}
+
+.hamburguer > i {
+    font-size: 25px;
+    line-height: 80px;
+}
+
+
+.titulospro {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.contenido-header {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    transition: all ease-in-out .6s;
+}
+
+.contenido-header>img {
+    width: 300px;
+    height: 300px;
+    animation: ease-in animacion 0.5s;
+    margin-left: 50px;
+}
+
+@keyframes animacion{
+    0%{
+       transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.textos-header{
+    margin: 0 0 0 30px;
+}
+
+.contenido-header p{
+    font-weight: 300;
+    margin-top: 14px;
+    color: #5d6678;
+    text-align: justify;
+}
+
+.contenido-header a{
+    margin: 28px 0 0 0;
+    width: 150px;
+    display: inline-block;
+    background-color: #e9afdf;
+    text-align: center;
+    color: white;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46 );
+}
+
+/* ########## SECTION EDUCACION ######## */
+.title{
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.educacion{
+    background-color: #f2f2f2;
+}
+
+.contenedor-educacion{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.articulo{
+    width: 30%;
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: all ease-in-out .5 ;
+}
+
+.articulo:hover{
+    box-shadow: 014px 10px rgba(17,29,48);
+    color: #fff;
+    background-color: #e9afdf;
+    transition: .5s;
+}
+
+.articulo > h3{
+    font-size: 24px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.articulo > a{
+    text-decoration: none;
+    color: #000;
+}
+
+.articulo > a:hover{
+    color: #fff;
+    transition: .5s;
+}
+
+
+/* ################################## EXPERIENCIA ################################## */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+
+/* ################################## SKILLS ################################## */
+.content-skills {
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-top: 50px;
+    justify-content: space-evenly; 
+}
+.skills {
+    width: 32%;
+    margin-bottom: 70px;
+    transition: 0.5s;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+    color: black;     
+}
+
+.skills img {
+    width: auto;
+    height: 60px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 5px;
+    color: #565759;
+}
+
+.skills img.softskills {
+    height: 68px;
+}
+
+.skills img:hover {
+    transition-duration: .7s;
+    transform: rotate(360deg);
+}
+
+.skills:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    color: #fff;
+    background: #e9afdf;
+    transition: .5s;
+}
+
+/* ################################## CERTIFICADOS ################################## */
+.certificados {
+    background: #f2f2f2;
+    /* padding: 0 100px; */
+}
+
+.content-certificados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.certificate {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 22%;
+    padding: 15px;
+    color: #565759;
+    margin: 30px 20px 20px 0;
+    text-align: center;
+}
+
+.certificate img {
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.certificate:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    color: #fff;
+    background: #e9afdf;
+    transition: .5s;    
+}
+
+.certificate a {
+    text-decoration: none;
+    color: #565759;
+}
+
+.certificate a:hover {
+    color: #fff;
+}
+
+/* ################################## MEDIA QUERYS ################################## */
+@media screen and (max-width:600px) {
+    h1{
+        font-size: 25px;
+    }
+    .contenido-header{
+        width: 100%;
+        height: 560px;
+    }
+    .contenido-header>img{
+        width: 120px;
+        height: 120px;
+        animation: ease-in animacion 0.5s;
+        margin: 20px 0;
+    }
+    .articulo, .experience, .certificate, .skills{
+        width: 90%;
+    }
+    .skills{
+        margin-bottom: 20px;
+    }
+    .articulo, .experience, .content-skills{
+        margin-top: 20px;
+    }
+    .content-skills{
+        margin-bottom: 20px;
+    }
+    .content-certificados{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .enlaces-header{
+        position: fixed;
+        background-color: #e9afdf;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        clip-path: circle(0.0% at 0 0);
+    }
+
+    .nav .hamburgueropen{
+        clip-path: circle(150% at 0% 0%);    }
+
+    .nav .enlaces-header a{
+        color: #fff;
+        background-color: #cf6c6c;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 20px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .nav .enlaces-header a:hover{
+        color: #e9afdf;
+        background-color: #fff;
+    }
+    .hamburguer{
+        display: block;
+    }
+}
+
+footer {
+    background: rgb(70, 70, 70);
+    padding: 20px 0;
+    padding-top: 30px;
+    overflow: hidden; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter {
+    width: 22%;
+    text-align: center;
+}
+
+.partFooter img {
+    width: 60%;
+}
+
+.partFooter h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-color: #e9afdf;
+    padding: 5px;
+    border: 1px solid #e9afdf;
+    border-radius: 5px;
+}
+
+.contact {
+    margin: 10px;
+    display: block;
+    text-align: left;
+}
+
+.contact > i {
+    float: left;
+    margin: 0 0 0 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact > p {
+    margin-left: 50px;
+    align-items: center;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.partFooter > a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.partFooter > a:hover {
+    color: #fff;
+    background-color: #cf6c6c;
+    border-color: #cf6c6c;
+    transition: all ease-in-out .6s;
+    border-radius: 5px;
+}
+
+.social-media > a > i {
+    font-size: 20px;
+    display: inline-block; 
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%; 
+    width: 38px; 
+    height: 38px; 
+    line-height: 36px; 
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media > a > i:hover {
+    color: #fff;
+    background-color: #e9afdf;
+    border-color: #e9afdf;
+}
+
+
+@media screen and (min-width:1000px) and (max-width:1200px) {
+
+    .space-infoperson img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+   
+    h1 {
+        font-size: 35px;
+    }
+
+    .contenido-header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 700px;
+    }
+
+    .contenido-header>img {
+        width: 150px; 
+        height: 150px;
+        animation: ease-in animacion 0.5s; 
+    } 
+
+    .nav .enlaces-header a {
+        margin: 0;
+    }
+
+    .textos-header h1 {
+        font-size: 40px;
+    }
+
+    .textos-header {
+        margin: 0;
+    }
+
+    .contenido-header>img {
+        margin: 0;
+    }
+
+    .articulo {
+        width: 45%;
+    }
+
+    .space-infoperson p {
+        margin-bottom: 20px;
+    }
+
+    .content-infopersonal {
+        margin: 20px 0;
+    }
+
+    .space-infoperson {
+        width: 95%;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
+    }
+
+    .certificate {
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    .articulo, .experience, .certificate {
+        width: 45%;
+    }
+
+    .skills {
+        width: 32%;
+    }
+
+    .content-infopersonal {
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 20px;;
+    }
+
+    .space-infoperson {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
+    }
+
+    .partFooter {
+        width: 45%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    h1 {
+        font-size: 25px;
+    }
+
+    .contenido-header {
+        width: 100%;
+        height: 560px;
+    }
+
+    .contenido-header>img {
+        width: 120px; 
+        height: 120px;
+        animation: ease-in animacion 0.5s; 
+        margin: 20px 0;
+    }  
+    
+    .articulo, .experience, .certificate, .skills {
+        width: 90%;
+    }
+
+    .skills {
+        margin-bottom: 20px;
+    }
+
+    .articulo, .experience, .content-skills {
+        margin-top: 20px;
+    }
+
+    .content-skills {
+        margin-bottom: 20px;
+    }
+
+    .content-certificados {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .certificate {
+        margin: 10px;
+        padding: 10px;        
+    }
+
+    .content-infopersonal {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .space-infoperson {
+        width: 95%;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .partFooter img {
+        display: none;
+    }
+
+    .partFooter {
+        width: 95%;
+        margin: auto;
+    }
+
+    .partFooter h4 {
+        margin-bottom: 5px;
+    }
+
+    .enlaces-header {
+        position: fixed;
+        background-color: #e9afdf;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh; /*100 view*head*/
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        clip-path: circle(0.0% at 0 0);
+    }
+
+    .nav .hamburgueropen {
+        clip-path: circle(150% at 0 0);
+    }
+
+    .nav .enlaces-header a {
+        color: #fff;
+        background-color: #cf6c6c;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 20px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .nav .enlaces-header a:hover {
+        color: #e9afdf;
+        background-color: #fff;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+}
+
+</style>
+
+
+<body>
+    <!-- BARRA DE NAVEGACION -->
+    <header id="inicio">
+        <nav>
+            <section class="contenedor nav">
+                <div class="enlaces-header">
+                    <a href="#inicio">INICIO</a>
+                    <a href="#hobbies">HOBBIES</a>
+                    <a href="#educacion">EDUCACION</a>
+                    <a href="#habilidades">HABILIDADES</a>
+                    <a href="#certificados">CERTIFICADOS</a>
+                    <a href="#contactos">CONTACTOS</a>
+                </div>
+                <div class="hamburguer">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+        <div class="contenedor">
+            <section class="contenido-header">
+                <section class="textos-header">
+                    <h1>KAROL JULIANA AREVALO PEREZ</h1>
+                    <div class="titulospro">
+                        <h3><i class="fa-solid fa-circle-check"  style="color: #000;"></i>Desarrollador de Aplicaciones Web(E)</h3>
+                        <h3><i class="fa-solid fa-circle-check"  style="color: #000;"></i>ingeniera en sistemas(E)</h3>
+                        <h3><i class="fa-solid fa-circle-check"  style="color: #000;"></i>Bachiller academica</h3>
+                    </div>
+                    <p>Desarrolladora de sofware orientado a la web, con facultades de frontend, trabajo en equipo y
+                        habilidades en java</p>
+                    <a href="img/" target="_blank"> Ver perfil -HV</a>
+                </section>
+                <img src="img/" alt="foto de perfil">
+            </section>
+        </div>
+    </header>
+    <!-- SECTION EDUCACION -->
+    <section id="educacion" class="educacion">
+        <div class="contenedor">
+            <div class="contenedor-educacion">
+                <div class="title">
+                    <h1>EDUCACION</h1>
+                </div>
+                <div class="articulo">
+                    <i></i>
+                    <h3>Ingeniera de sistemas</h3>
+                    <p>Tesis meritoria</p>
+                    <p>Universidad francisco de paula santander</p>
+                    <p>2016</p>
+                    <a href="#" target="_blank">ver Documentos</a>
+                </div>
+                <div class="articulo">
+                    <i></i>
+                    <h3>Bachiller Academico</h3>
+                    <p>Colegio Jose Eusebio Caro</p>
+                    <p>2022</p>
+                    <a href="doc/bachillerato.pdf" target="_blank">ver Documentos</a>
+                </div>
+                <div class="articulo">
+                    <i></i>
+                    <h3>Educacion Basica Primaria</h3>
+                    <p>Escuela Simon Bolivar #1</p>
+                    <p>2016</p>
+                    <a href="doc/primaria.pdf" target="_blank">ver Documentos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN EXPERIENCIA -->
+    <section id="formulario">
+        <h2>Contáctame</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+     <!-- SECCIÓN HABILIDADES -->
+     <section id="habilidades" class="habilidades">
+        <div class="contenedor">
+            <div class="title">
+                <h1>HABILIDADES</h1>
+            </div>
+            <div class="content-skills">
+                <div class="skills">
+                    <h2>Programación</h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Logo Java">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Logo Javascript">
+                </div>
+                <div class="skills">
+                    <h2>Tecnologías</h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Logo HTML5">
+                </div>
+                <div class="skills">
+                    <h2>Blandas</h2>
+                    <img src="img/creatividad.png" alt="Vector Creatividad" title="Creatividad" class="softskills">
+                    <img src="img/equipo.png" alt="Vector Equipo" title="Trabajo en Equipo" class="softskills">
+                    <img src="img/organizacion.png" alt="Vector Tiempo" title="Organización" class="softskills">
+                    <img src="img/relacion.png" alt="Vector Relacion" title="Relacional" class="softskills">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN CERTIFICADOS -->
+    <section id="certificados" class="certificados">
+        <div class="contenedor">
+            <div class="title">
+                <h1>CERTIFICADOS</h1>
+            </div>            
+            <div class="content-certificados">
+                <div class="certificate">
+                    <h3>CLASE ESPEJO</h3>
+                    <h4>UFPSO - AÑO 2024</h4>
+                    <a href="doc/certificado.pdf" target="_blank">Ver</a>
+                </div>
+                <div class="certificate">
+                    <h3>TRATAMIENTO PRIMARIO DE RESIDUOS SOLIDOS</h3>
+                    <h4>SENA - AÑO 2022</h4>
+                    <a href="doc/sena.pdf" target="_blank">Ver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/d874060a29.js" crossorigin="anonymous"></script>    
+    <footer>
+        <div class="partFooter">
+            <img src="img/karol foto.png" alt="">
+        </div>
+        <div class="partFooter">
+            <h4>Contacto</h4>
+            <div class="contact">
+                <i class="fa-solid fa-phone"></i>
+                <p>(+57) 324-657-4048</p>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-envelope"></i>
+                <p>kjarevalope@ufpso.edu.co</p>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-user"></i>
+                <p>juyi9990@gmail.com</p>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-street-view"></i>
+                <p>Cra.15 KDX 072-681</p>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Ocaña / Colombia</p>
+            </div>
+        </div>
+        <div class="partFooter">
+            <h4>Enlaces</h4>
+            <a href="https://github.com/karol3012/CURRICULUM.git" target="_blank">Repositorio curriculum</a>
+            <a href="https://github.com/karol3012/MI-PAGINA-WEB.git" target="_blank">Repositorio Pagina Web </a>
+        </div>
+        <div class="partFooter">
+            <h4>Redes Sociales</h4>
+            <div class="social-media">            
+                <a href="https://www.linkedin.com/in/karol-juliana-arevalo-perez-758b4b310/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/karol3012" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61555380564283" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/karolsj08?igsh=amNjdTdjN2V5bGRu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@karolarevalo-sq1zc/featured" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
