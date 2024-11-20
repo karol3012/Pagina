@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
 }
 
-h1 {
+h1{
     font-size: 50px;
 }
 
-.contenedor {
+.contenedor{
     width: 90%;
     max-width: 1400px;
     margin: auto;
     overflow: hidden;
 }
 
-header::before {
+header::before{
     content: "";
     display: block;
     margin-bottom: 80px;
@@ -31,7 +32,7 @@ header::before {
 nav {
     width: 100%;
     height: 80px;
-    background-color: #fff;
+    background-color: #000000;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -93,7 +94,7 @@ nav {
 }
 
 .contenido-header {
-    width: 80%;
+    width: 100%;
     height: 600px;
     display: flex;
     justify-content: space-between;
@@ -147,56 +148,85 @@ nav {
 }
 
 /* ########## SECTION HOBBIES ######## */
-.title{
-    margin-top: 50px;
-    display: block;
-    width: 100%;
+#hobbies {
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    max-width: 500px; 
+    margin: auto;
+}
+
+#hobbies ul {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#hobbies li {
+    min-width: 100%; 
+    box-sizing: border-box;
     text-align: center;
 }
 
-.hobbies{
-    background-color: #f2f2f2;
+#hobbies img {
+    max-width: 100%;
+    height: 60%;
 }
 
-.contenedor-hobbies{
+#hobbies .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+#hobbies ul {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-    justify-content: space-around;
+    transition: transform 0.5s ease-in-out;
 }
 
-.articulo{
-    width: 30%;
-    background-color: #fff;
-    margin-top: 50px;
-    border-radius: 10px;
-    padding: 45px 30px 60px 30px;
-    transition: all ease-in-out .5 ;
+
+#item1:checked ~ ul {
+    transform: translateX(0);
 }
 
-.articulo:hover{
-    box-shadow: 014px 10px rgba(17,29,48);
-    color: #fff;
-    background-color: #e9afdf;
-    transition: .5s;
+#item2:checked ~ ul {
+    transform: translateX(-100%);
 }
 
-.articulo > h3{
-    font-size: 24px;
+#item3:checked ~ ul {
+    transform: translateX(-200%);
+}
+
+#item4:checked ~ ul {
+    transform: translateX(-300%);
+}
+
+
+.controls {
+    text-align: center;
     margin-top: 10px;
-    text-transform: uppercase;
 }
 
-.articulo > a{
-    text-decoration: none;
-    color: #000;
+.controls label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.articulo > a:hover{
-    color: #fff;
-    transition: .5s;
+input[type="radio"]:checked + label {
+    background: #333;
 }
-
 /* ########## SECTION EDUCACION ######## */
 .title{
     margin-top: 50px;
@@ -206,7 +236,7 @@ nav {
 }
 
 .educacion{
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 
 .contenedor-educacion{
@@ -249,8 +279,9 @@ nav {
 }
 
 
-/* ################################## EXPERIENCIA ################################## */
+/* ################################## FORMULARIO ################################## */
 section {
+    background-color: #000;
     padding: 20px;
     margin: 20px;
     background: #fff;
@@ -296,6 +327,7 @@ button:hover {
 
 /* ################################## SKILLS ################################## */
 .content-skills {
+    background-color: #ffffff;
     display: flex; 
     flex-wrap: wrap; 
     margin-top: 50px;
@@ -342,51 +374,122 @@ button:hover {
     transition: .5s;
 }
 
-/* ################################## CERTIFICADOS ################################## */
-.certificados {
-    background: #f2f2f2;
-    /* padding: 0 100px; */
+/* ################################## Metas ################################## */
+.container_metas{
+    background: var(--background-color);
+    padding-top: 100px;
 }
 
-.content-certificados {
+.metas{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_metas{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text_metas p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text_metas h2{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container_box-metas{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 30px 0;
+    margin-top: 40px;
 }
 
-.certificate {
-    background-color: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    width: 22%;
-    padding: 15px;
-    color: #565759;
-    margin: 30px 20px 20px 0;
-    text-align: center;
+.box_metas{
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 14px;
+    transition: transform 0.5s ease;
+    background-image: url(https://www.emagister.com/blog/wp-content/uploads/2019/04/GettyImages-1146417905.jpg);
+    background-size: cover;
+    margin-bottom: 5%;
 }
 
-.certificate img {
-    height: 100px;
-    width: auto;
-    border-radius: 5px;
+.box_metas:hover{
+    background-image: none;
+    transform: scale(1.1);
+    box-shadow: var(--box_shadow-primary);
 }
 
-.certificate:hover {
-    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
-    color: #fff;
-    background: #e9afdf;
-    transition: .5s;    
+.box_metas p{
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
-.certificate a {
-    text-decoration: none;
-    color: #565759;
+.box_metas:hover p{
+    opacity: 1;
 }
 
-.certificate a:hover {
-    color: #fff;
+.box_metas1{
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 14px;
+    transition: transform 0.5s ease;
+    background-image: url(https://i.pinimg.com/736x/80/02/58/80025889b4b96742860bba70bdf185ab.jpg);
+    background-size: cover;
+    margin-bottom: 5%;
 }
+
+.box_metas1:hover{
+    background-image: none;
+    transform: scale(1.1);
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_metas1 p{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box_metas1:hover p{
+    opacity: 1;
+}
+
+.box_metas2{
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+    background-image: url(https://www.vinccihoteles.com/media/uploads/cms_apps/imagenes/disposicion-articulos-viaje-angulo-alto.jpg?q=pr:sharp/rs:fill/w:900/h:500/g:ce/f:jpg);
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.box_metas2:hover{
+    background-image: none;
+    transform: scale(1.1);
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_metas2 p{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box_metas2:hover p{
+    opacity: 1;
+}
+
 
 /* ################################## MEDIA QUERYS ################################## */
 @media screen and (max-width:600px) {
@@ -403,19 +506,19 @@ button:hover {
         animation: ease-in animacion 0.5s;
         margin: 20px 0;
     }
-    .articulo, .experience, .certificate, .skills{
+    .articulo, .hobbies, .metas, .skills{
         width: 90%;
     }
     .skills{
         margin-bottom: 20px;
     }
-    .articulo, .experience, .content-skills{
+    .articulo, .hobbies, .content-skills{
         margin-top: 20px;
     }
     .content-skills{
         margin-bottom: 20px;
     }
-    .content-certificados{
+    .content-metas{
         padding: 0;
         margin-bottom: 20px;
     }
@@ -453,7 +556,7 @@ button:hover {
         display: block;
     }
 }
-
+* /*################################## FOOTER ################################## */
 footer {
     background: rgb(70, 70, 70);
     padding: 20px 0;
@@ -630,7 +733,7 @@ footer {
 
 @media screen and (max-width:800px) {
 
-    .articulo, .experience, .certificate {
+    .articulo, .hobbies, .metas {
         width: 45%;
     }
 
@@ -685,7 +788,7 @@ footer {
         margin: 20px 0;
     }  
     
-    .articulo, .experience, .certificate, .skills {
+    .articulo, .hobbies, .metas, .skills {
         width: 90%;
     }
 
@@ -693,7 +796,7 @@ footer {
         margin-bottom: 20px;
     }
 
-    .articulo, .experience, .content-skills {
+    .articulo, .hobbies, .content-skills {
         margin-top: 20px;
     }
 
@@ -701,12 +804,12 @@ footer {
         margin-bottom: 20px;
     }
 
-    .content-certificados {
+    .content-metas {
         padding: 0;
         margin-bottom: 30px;
     }
 
-    .certificate {
+    .metas {
         margin: 10px;
         padding: 10px;        
     }
