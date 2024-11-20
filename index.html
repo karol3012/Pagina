@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Hoja de vida, curriculum Vitae, karol Arevalo, Perfil Profesional">
+    <meta name="Keywords"
+        content="Curriculum, Hoja de vida, cv,Hv,Perfil, Ingeniero de sistemas, Developer, Desarrollador">
+    <meta name="description" content="Portal para conocer la hoja de vida de la ingeniera Karol Arevalo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="author" href="https://www.linkedin.com/in/karol-juliana-arevalo-perez-758b4b310/">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/karolp.png" type="image/png">
+    <title>Karol-Curriculum</title>
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACION -->
+    <header id="inicio">
+        <nav>
+            <section class="contenedor nav">
+                <div class="enlaces-header">
+                    <a href="#inicio">INICIO</a>
+                    <a href="#hobbies">HOBBIES</a>
+                    <a href="#educacion">EDUCACION</a>
+                    <a href="#habilidades">HABILIDADES</a>
+                    <a href="#metas">METAS</a>
+                    <a href="#contactos">CONTACTOS</a>
+                </div>
+                <div class="hamburguer">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+        <div class="contenedor">
+            <section class="contenido-header">
+                <article class="textos-header">
+                    <h1>KAROL JULIANA AREVALO PEREZ</h1>
+                    <div class="titulospro">
+                        <h3><i class="fa-solid fa-circle-check"  style="color: #000;"></i>Desarrollador de Aplicaciones Web(E)</h3>
+                        <h3><i class="fa-solid fa-circle-check"  style="color: #000;"></i>ingeniera en sistemas(E)</h3>
+                        <h3><i class="fa-solid fa-circle-check"  style="color: #000;"></i>Bachiller academica</h3>
+                    </div>
+                    <p>Desarrolladora de sofware orientado a la web, con facultades de frontend, trabajo en equipo y
+                        habilidades en java</p>
+                    <a href="./img/karol.JPG" target="_blank"> Ver perfil -HV</a>
+                </article>
+                <img class="imagen" src="./img/karol.png" alt="foto de perfil">
+            </section>
+        </div>
+    </header>
+    <main>
+         <!-- SECTION HOBBIES -->
+    <section id="hobbies">
+        <h2 class="titulo">HOBBIES</h2>
+        <input type="radio" name="carousel" id="item1" checked>
+        <input type="radio" name="carousel" id="item2">
+        <input type="radio" name="carousel" id="item3">
+        <input type="radio" name="carousel" id="item4">
+        <ul>
+            <li>
+                <img src="./img/spotify.png" alt="imagen no encontrada">
+                <section id="texto">
+                    <h3>ESCUCHAR MUSICA</h3>
+                    <a href="https://open.spotify.com/playlist/3gsjupp2W9Y4mYuBxUjJlW?si=x146cBKlT-KBJSpi8XBe0A" target="_blank">Open Spotify</a>
+                </section>
+            </li>
+            <li>
+                <img src="./img/marcas.png" alt="">
+                <section id="texto">
+                    <h3>VER DESFILES</h3>
+                    <a href="https://www.vogue.es/tags/pasarelas" target="_blank">Desfiles</a>
+                </section>
+            </li>
+            <li>
+                <img src="./img/formula1.png" alt="">
+                <section id="texto">
+                    <h3>FORMULA 1</h3>
+                    <a href="https://www.formula1.com/" target="_blank">Pagina de formula1</a>
+                </section>
+            </li>
+            <li>
+                <img src="./img/leer.png" alt="">
+                <section id="texto">
+                    <h3>LEER</h3>
+                    <a href="https://www.conectatealalectura.cl/wp-content/uploads/2023/10/La-Biblioteca-de-la-Medianoche-Matt-Haig-1.pdf" target="_blank">Biblioteca de Media Noche</a>
+                </section>
+            </li>
+        </ul>
+    
+        <div class="controls">
+            <label for="item1"></label>
+            <label for="item2"></label>
+            <label for="item3"></label>
+            <label for="item4"></label>
+        </div>
+    </section>
+    <!-- SECTION EDUCACION -->
+    <section id="educacion" class="educacion">
+            <div class="contenedor-educacion">
+                <div class="title">
+                    <h1>EDUCACION</h1>
+                </div>
+                <article class="articulo">
+                    <h3>Ingeniera de sistemas</h3>
+                    <p>Tesis meritoria</p>
+                    <p>Universidad francisco de paula santander</p>
+                    <p>2016</p>
+                    <a href="#" target="_blank">ver Documentos</a>
+                </article>
+                <article class="articulo">
+                    <h3>Bachiller Academico</h3>
+                    <p>Colegio Jose Eusebio Caro</p>
+                    <p>2022</p>
+                    <a href="./doc/bachillerato.pdf" target="_blank">ver Documentos</a>
+                </article>
+                <article class="articulo">
+                    <h3>Educacion Basica Primaria</h3>
+                    <p>Escuela Simon Bolivar #1</p>
+                    <p>2016</p>
+                    <a href="./doc/primaria.pdf" target="_blank">ver Documentos</a>
+                </article>
+            </div>
+    </section>
+    <!-- SECCIÓN FORMULARIO -->
+    <section id="formulario">
+        <h2>Contáctame</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+     <!-- SECCIÓN HABILIDADES -->
+     <section id="habilidades" class="habilidades">
+            <div class="title">
+                <h1>HABILIDADES</h1>
+            </div>
+            <section class="content-skills">
+                <div class="skills">
+                    <h2>Programación</h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Logo Java">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Logo Javascript">
+                </div>
+                <div class="skills">
+                    <h2>Tecnologías</h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Logo HTML5">
+                </div>
+                <div class="skills">
+                    <h2>Blandas</h2>
+                    <img src="./img/creatividad.png" alt="Vector Creatividad" title="Creatividad" class="softskills">
+                    <img src="./img/equipo.png" alt="Vector Equipo" title="Trabajo en Equipo" class="softskills">
+                    <img src="./img/organizacion.png" alt="Vector Tiempo" title="Organización" class="softskills">
+                    <img src="./img/relacion.png" alt="Vector Relacion" title="Relacional" class="softskills">
+                </div>
+            </section>
+    </section>
+    <!-- SECCIÓN METAS -->
+    <section id="metas" class="metas"></section>
+            <div class="metas">
+                <article class="text_metas">
+                    <h2>METAS</h2>
+                </article>
+                <div class="container_box-metas">
+                    <article class="box_metas">
+                        <p> Ingenieria de sistemas</p>
+                    </article>
+                    <article class="box_metas1">
+                        <p>Famlia</p>
+                    </article>
+                    <article class="box_metas2">
+                        <p>Viajar</p>
+                    </article>
+                </div>
+            </div>
+    </section>
+    <script src="https://kit.fontawesome.com/d874060a29.js" crossorigin="anonymous"></script>  
+    </main>
+   
+    <!-- SECCIÓN FOOTER -->  
+    <footer>
+        <figure class="partFooter">
+            <img src="./img/karol2.png" alt="">
+        </figure>
+        <div class="partFooter">
+            <h4>Contacto</h4>
+            <article class="contact">
+                <i class="fa-solid fa-phone"></i>
+                <p>(+57) 324-657-4048</p>
+            </article>
+            <article class="contact">
+                <i class="fa-solid fa-envelope"></i>
+                <p>kjarevalope@ufpso.edu.co</p>
+            </article>
+            <article class="contact">
+                <i class="fa-solid fa-user"></i>
+                <p>juyi9990@gmail.com</p>
+            </article>
+            <article class="contact">
+                <i class="fa-solid fa-street-view"></i>
+                <p>Cra.15 KDX 072-681</p>
+            </article>
+            <article class="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Ocaña / Colombia</p>
+            </article>
+        </div>
+        <div class="partFooter">
+            <h4>Enlaces</h4>
+            <a href="https://github.com/karol3012/MI-PAGINA-WEB.git" target="_blank">Repositorio Pagina Web </a>
+        </div>
+        <div class="partFooter">
+            <h4>Redes Sociales</h4>
+            <div class="social-media">            
+                <a href="https://www.linkedin.com/in/karol-juliana-arevalo-perez-758b4b310/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/karol3012" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61555380564283" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/karolsj08?igsh=amNjdTdjN2V5bGRu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@karolarevalo-sq1zc/featured" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
